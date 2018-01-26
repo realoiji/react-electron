@@ -1,7 +1,8 @@
-# react-redux-boilerplate
-React starter boilerplate for client and server rendering (Universal)
+# react-electron
+React starter boilerplate for run or build in electron (Universal).
 # Features
 
+- [Electron](https://github.com/electron/electron)
 - [React](https://github.com/facebook/react)
 - [React Router](https://github.com/rackt/react-router)
 - [React Router Redux](https://github.com/reactjs/react-router-redux)
@@ -11,23 +12,34 @@ React starter boilerplate for client and server rendering (Universal)
 
 # Getting Started
 ```
+$ git clone https://github.com/realoiji/react-electron.git
+$ cd react-electron
 $ npm install
 $ npm run dev  
 ```
 
-# Client: Build to production
+# Build to production
 
 ```
-$ npm run build:client
+$ npm run build
 ../build/
 deploy folder build
 ```
 
-# Server rendering: Build to production
+# Build react and run electron 
 
 ```
-$ npm run build
-$ npm run start
+$ npm run build:dev:electron
+```
+
+# Build react and electron to production
+
+```
+$ npm run build:all
+```
+For Mac
+```
+$ npm run build:all-mac
 ```
 
 # Testing
