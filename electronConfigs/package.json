@@ -1,0 +1,13 @@
+{
+  "name": "smartinfo-callcenter",
+  "icon": "./public/icon.ico",
+  "version": "1.0.0",
+  "description": "Live assistants for officer",
+  "repository": {
+    "url": "https://github.com/",
+    "type": "git"
+  },
+  "author": "Forviz",
+  "license": "MIT",
+  "main": "electronScripts/main.js"
+}
