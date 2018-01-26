@@ -128,6 +128,10 @@ module.exports = {
       {
         test: webpackIsomorphicToolsPlugin.regularExpression('images'),
         loader: 'url-loader?limit=1000&name=img/[name].[ext]'
+      },
+      {
+        test: /\.(mp3|mp4)$/,
+        loader: 'file-loader'
       }
     ]
   },
