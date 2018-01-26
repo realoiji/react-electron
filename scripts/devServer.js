@@ -85,6 +85,7 @@ app.use(
 app.use(require('webpack-hot-middleware')(compiler))
 
 app.use('/public', express.static('public'))
+app.use('/configs', express.static('configs'))
 
 app.get('*', (req, res) => {
   res.sendFile(projectPath.htmlIndex)
