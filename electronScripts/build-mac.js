@@ -1,4 +1,4 @@
-const CONFIG = require('../package.json')
+const CONFIG = require('./package.json')
 const fs = require('fs-extra')
 const packager = require('electron-packager')
 
@@ -15,8 +15,8 @@ const options = {
 }
 
 fs.remove('./electronBuildMac').then(() => {
-  fs.copy('./electronScript/main.js', './build/electronScript/main.js').then(() => {
-    fs.copy('./package.json', './build/package.json').then(() => {
+  fs.copy('./electronScripts/main.js', './build/electronScripts/main.js').then(() => {
+    fs.copy('./electronScripts/package.json', './build/electronScripts/package.json').then(() => {
       packager(options, (err, appPaths) => {
         console.log('Error: ', err)
         console.log('appPaths: ', appPaths)
